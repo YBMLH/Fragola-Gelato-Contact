@@ -248,6 +248,77 @@
     white-space: nowrap;
   }
 
+  /* TESTIMONIAL */
+  .review-wrap {
+    max-width: 780px;
+    margin: 24px auto 0;
+    padding: 0 16px;
+  }
+  .review-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 28px 26px;
+    box-shadow: 0 2px 12px var(--shadow);
+    transition: background 0.35s, border-color 0.35s;
+  }
+  .review-head {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .review-avatar {
+    width: 46px; height: 46px;
+    border-radius: 50%;
+    background: rgba(200,135,58,0.15);
+    color: var(--warm);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    flex-shrink: 0;
+  }
+  .review-name {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 1.05rem;
+    color: var(--text);
+  }
+  .review-meta { font-size: 0.74rem; color: var(--muted); }
+  .review-stars { color: #FBBC05; font-size: 1rem; letter-spacing: 2px; margin-top: 2px; }
+  .review-text {
+    margin-top: 16px;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--text);
+    font-weight: 300;
+  }
+  .review-ratings {
+    margin-top: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .review-tag {
+    font-size: 0.72rem;
+    color: var(--muted);
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 5px 12px;
+  }
+  .review-tag b { color: var(--text); font-weight: 600; }
+  .review-source {
+    margin-top: 16px;
+    font-size: 0.72rem;
+    color: var(--muted);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
   /* FOOTER */
   footer {
     text-align: center;
@@ -368,6 +439,33 @@
     <div class="card-arrow">Donner mon avis →</div>
   </a>
 
+</div>
+
+<div class="divider"><span>Ce qu'ils disent</span></div>
+
+<div class="review-wrap">
+  <div class="review-card">
+    <div class="review-head">
+      <div class="review-avatar">S</div>
+      <div>
+        <div class="review-name">Said Kanoun</div>
+        <div class="review-meta">Avis Google · il y a un an</div>
+        <div class="review-stars">★★★★★</div>
+      </div>
+    </div>
+    <div class="review-text">
+      « Impressed by the beautiful design and ambiance. The food was delicious, especially the ice cream, which was a standout. The service could use some improvement, but overall, it was a great experience 👍🌟 »
+    </div>
+    <div class="review-ratings">
+      <span class="review-tag">Food : <b>5</b></span>
+      <span class="review-tag">Service : <b>3</b></span>
+      <span class="review-tag">Atmosphere : <b>5</b></span>
+    </div>
+    <div class="review-source">
+      <svg width="14" height="14" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19.6 12.2c0-.5-.05-1-.13-1.45H12v2.74h4.27a3.65 3.65 0 0 1-1.58 2.4v2h2.56c1.5-1.38 2.35-3.42 2.35-5.69z" fill="#4285F4"/><path d="M12 20c2.13 0 3.92-.7 5.23-1.91l-2.56-2c-.71.48-1.62.76-2.67.76-2.05 0-3.79-1.38-4.41-3.25H4.95v2.06A8 8 0 0 0 12 20z" fill="#34A853"/><path d="M7.59 13.6a4.8 4.8 0 0 1 0-3.06V8.48H4.95a8 8 0 0 0 0 7.18l2.64-2.06z" fill="#FBBC05"/><path d="M12 7.29c1.16 0 2.2.4 3.02 1.18l2.27-2.27A8 8 0 0 0 4.95 8.48l2.64 2.06C8.21 8.67 9.95 7.29 12 7.29z" fill="#EA4335"/></svg>
+      Avis publié sur Google
+    </div>
+  </div>
 </div>
 
 <footer>Fragola Food · Fait maison · Produits frais du jour</footer>
